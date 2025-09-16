@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港分红险红利实现率深度解析 - 2025年最新报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F52BA',
+                        secondary: '#165DFF',
+                        accent: '#3B82F6',
+                        neutral: '#F0F4F8',
+                        'neutral-dark': '#334E68',
+                        'neutral-light': '#CBD5E1',
+                        success: '#10B981',
+                        warning: '#F59E0B',
+                        danger: '#EF4444',
+                    },
+                    fontFamily: {
+                        sans: ['Arial', 'Helvetica', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 2px 8px rgba(0, 0, 0, 0.08)',
+                        'card-hover': '0 4px 12px rgba(0, 0, 0, 0.12)',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .section-padding {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .card-spacing {
+                margin-bottom: 1.5rem;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 顶部导航栏 -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-bar-chart text-primary text-2xl"></i>
+                    <span class="text-lg font-semibold text-gray-900">香港保险分析</span>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#intro" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">概述</a>
+                    <a href="#factors" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">影响因素</a>
+                    <a href="#companies" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">公司分析</a>
+                    <a href="#ranking" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">排名对比</a>
+                    <a href="#guide" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">实用指南</a>
+                    <a href="#outlook" class="text-gray-600 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-primary">未来展望</a>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-primary">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-2 space-y-1">
+                <a href="#intro" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">概述</a>
+                <a href="#factors" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">影响因素</a>
+                <a href="#companies" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">公司分析</a>
+                <a href="#ranking" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">排名对比</a>
+                <a href="#guide" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">实用指南</a>
+                <a href="#outlook" class="block text-gray-600 hover:text-primary transition-colors py-2 px-3 rounded hover:bg-gray-50">未来展望</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主横幅 -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-12 md:py-18">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-2xl md:text-4xl font-bold mb-4 leading-tight">香港分红险红利实现率深度解析</h1>
+                <p class="text-lg md:text-xl opacity-90 mb-6">2025年最新数据与主要保险公司表现</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="#intro" class="bg-white text-primary hover:bg-gray-100 font-medium px-5 py-2 rounded transition-colors shadow-md">
+                        开始阅读 <i class="fa fa-angle-down ml-1"></i>
+                    </a>
+                    <a href="#ranking" class="bg-transparent border-2 border-white hover:bg-white/10 font-medium px-5 py-2 rounded transition-colors">
+                        查看排名 <i class="fa fa-chart-bar ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- 第一部分：概述 - 红利实现率的核心指标 -->
+        <section id="intro" class="mb-12 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-info-circle text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">红利实现率：香港分红险的核心指标</h2>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-card p-5 card-spacing">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">什么是红利实现率？</h3>
+                    <p class="text-gray-700 mb-3 leading-relaxed">
+                        红利实现率是衡量保险公司分红保单实际派发红利与销售时演示红利之间比例的重要指标。简单来说，若保单演示红利为100元，实际派发80元，则红利实现率为80%。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        该指标直接反映保险公司的投资能力与分红政策稳定性，是投保人评估保单实际回报的关键依据。香港保险业监管局要求所有保险公司每年公布分红保单的红利实现率，旨在提升市场透明度、保护消费者权益。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-card p-5 card-spacing">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">计算方法与监管新规</h3>
+                    <p class="text-gray-700 mb-3 leading-relaxed">
+                        根据香港保监局规定，红利实现率的核心计算公式为"实际派发的红利总额 ÷ 销售时演示的红利总额"，但实际操作中，不同保险公司的计算方法存在差异。
+                    </p>
+                    
+                    <div class="bg-blue-50 border-l-4 border-primary p-3 mb-4 rounded">
+                        <h4 class="font-medium text-primary mb-1">2025年监管新规</h4>
+                        <p class="text-gray-700 text-sm">
+                            2025年2月，香港保监局发布《分红保单利益演示利率上限指引》，规定自2025年7月1日起：
+                        </p>
+                        <ul class="list-disc pl-5 mt-1 space-y-0.5 text-gray-700 text-sm">
+                            <li>港元分红保单客户预期收益率 ≤ 6%</li>
+                            <li>非港元分红保单客户预期收益率 ≤ 6.5%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 实现率图解 -->
+                <div class="bg-white rounded-lg shadow-card p-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">红利实现率图解</h3>
+                    <div class="h-60 md:h-72">
+                        <canvas id="introChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二部分：影响因素 -->
+        <section id="factors" class="mb-12 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-puzzle-piece text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">红利实现率数据差异的原因</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <!-- 产品差异 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-3">
+                            <i class="fa fa-cubes text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">产品差异</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            不同保险公司的分红险在设计理念、投资策略、风险特征上存在显著差异，直接影响红利实现率。例如保诚"创未来基本储蓄保障计划"终期红利实现率达1044%，而"理想人生"保障系列II仅10%-16%。
+                        </p>
+                    </div>
+                    
+                    <!-- 计算方法差异 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-3">
+                            <i class="fa fa-calculator text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">计算方法差异</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            尽管保监局有披露要求，但各公司计算细节仍存差异，如是否包含特别红利、计算时间点选择、保单范围等，导致数据不可直接对比。
+                        </p>
+                    </div>
+                    
+                    <!-- 保单年限影响 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-3">
+                            <i class="fa fa-calendar text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">保单年限影响</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            长期保单更能反映保险公司稳定表现，短期保单易受市场波动冲击。例如友邦保险十年以上产品实现率稳定在100%-110%，投资策略与分红政策随时间趋于稳定。
+                        </p>
+                    </div>
+                    
+                    <!-- 市场环境与投资策略 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center mb-3">
+                            <i class="fa fa-line-chart text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">市场环境与策略</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            保险公司投资表现直接影响实现率，受宏观经济、市场波动、策略调整影响。例如2021-2024年加息周期中，股票占比高的产品实现率明显回升。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 投资策略对比 -->
+                <div class="bg-white rounded-lg shadow-card p-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">不同投资策略对实现率的影响</h3>
+                    <div class="h-60 md:h-72">
+                        <canvas id="strategyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三部分：主要保险公司分析 -->
+        <section id="companies" class="mb-12 section-padding">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-building text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">2025年香港主要保险公司分析</h2>
+                </div>
+                
+                <!-- 公司分析卡片 -->
+                <div class="space-y-5">
+                    <!-- 友邦保险 -->
+                    <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-card-hover transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/4 bg-blue-50 p-5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-shield text-primary text-xl"></i>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-gray-900">友邦保险</h3>
+                                    <div class="mt-1.5 inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">
+                                        稳健增长
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/4 p-5">
+                                <div class="flex flex-wrap gap-3 mb-3">
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">周年分红：</span>
+                                        <span class="font-semibold">91%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">终期分红：</span>
+                                        <span class="font-semibold">103%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">长期平均：</span>
+                                        <span class="font-semibold">93.3%</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">
+                                    整体表现稳健，新产品实现率差异较大（50%为71%、50%为143%），老产品均超70%。"充裕未来·盈尚"复归红利162%，"资优教育储蓄计划"终期红利169%。
+                                </p>
+                                <div class="bg-gray-50 p-2.5 rounded text-xs text-gray-600">
+                                    <strong>核心优势：</strong> 稳健投资策略（长期收益率超4.5%）+ 分红平滑机制，实现率行业领先。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 保诚保险 -->
+                    <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-card-hover transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/4 bg-blue-50 p-5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-balance-scale text-primary text-xl"></i>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-gray-900">保诚保险</h3>
+                                    <div class="mt-1.5 inline-block bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-0.5 rounded">
+                                        两极分化
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/4 p-5">
+                                <div class="flex flex-wrap gap-3 mb-3">
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">平均实现率：</span>
+                                        <span class="font-semibold">76%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">周年分红：</span>
+                                        <span class="font-semibold">69%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">十年前平均：</span>
+                                        <span class="font-semibold">131.3%</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">
+                                    产品表现差异极大，"创未来基本储蓄保障计划"终期红利实现率达1044%，而"理想人生"保障系列II仅10%-16%。趸缴保单实现率较高（84%、72%、76%、76%、105%）。
+                                </p>
+                                <div class="bg-gray-50 p-2.5 rounded text-xs text-gray-600">
+                                    <strong>分化原因：</strong> 产品投资策略差异 + 低息环境压力（英式分红代表），市场环境改善后部分产品回升。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 安盛保险 -->
+                    <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-card-hover transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/4 bg-blue-50 p-5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-trophy text-primary text-xl"></i>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-gray-900">安盛保险</h3>
+                                    <div class="mt-1.5 inline-block bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">
+                                        表现出色
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/4 p-5">
+                                <div class="flex flex-wrap gap-3 mb-3">
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">平均实现率：</span>
+                                        <span class="font-semibold">95%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">超100%占比：</span>
+                                        <span class="font-semibold">68%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">近3年稳定：</span>
+                                        <span class="font-semibold">98%+</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">
+                                    多个储蓄分红产品实现率超100%，部分达110%以上。"挚汇""隽宇"系列采用"双红利锁定"，股票资产占比45%（高于行业平均35%）。
+                                </p>
+                                <div class="bg-gray-50 p-2.5 rounded text-xs text-gray-600">
+                                    <strong>核心优势：</strong> 稳健投资 + 风险管理，第三方对比中常优于友邦、保诚，产品受市场青睐。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 宏利保险（新增） -->
+                    <div class="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-card-hover transition-shadow">
+                        <div class="md:flex">
+                            <div class="md:w-1/4 bg-blue-50 p-5 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <i class="fa fa-university text-primary text-xl"></i>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-gray-900">宏利保险</h3>
+                                    <div class="mt-1.5 inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded">
+                                        稳步提升
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-3/4 p-5">
+                                <div class="flex flex-wrap gap-3 mb-3">
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">平均实现率：</span>
+                                        <span class="font-semibold">89%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">储蓄险表现：</span>
+                                        <span class="font-semibold">94%</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="text-gray-500 mr-1.5 text-sm">保障险表现：</span>
+                                        <span class="font-semibold">82%</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">
+                                    宏利保险近年表现稳步提升，"宏智传承"系列实现率达97%，"活耀人生"保障计划平均85%。采用"平滑红利"机制，降低短期波动影响。
+                                </p>
+                                <div class="bg-gray-50 p-2.5 rounded text-xs text-gray-600">
+                                    <strong>核心优势：</strong> 均衡资产配置（股票40%、债券50%、另类资产10%），长期收益稳定，深受内地客户青睐。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 其他公司概览 -->
+                <div class="bg-white rounded-lg shadow-card p-5 mt-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">其他主要保险公司表现</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">公司名称</th>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">2025年核心数据</th>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">特点</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">中国人寿（海外）</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">新产品实现率超100%</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">"傲珑创富"表现突出</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">万通保险</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">平均96%，部分超100%</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">新兴力量，长期表现待观察</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">富邦人寿</td>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">最高达105%，近10年超100%</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">分红宣告率行业领先</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四部分：排名与分析 -->
+        <section id="ranking" class="mb-12 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-trophy text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">2025年香港保险公司排名分析</h2>
+                </div>
+                
+                <!-- 排名图表 -->
+                <div class="bg-white rounded-lg shadow-card p-5 mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">综合排名</h3>
+                    <div class="h-72">
+                        <canvas id="rankingChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- 不同评估标准下的排名 -->
+                <div class="bg-white rounded-lg shadow-card p-5 mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">不同评估标准下的排名变化</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium text-gray-900 mb-2">按平均实现率排名</h4>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-yellow-500">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">1</span>
+                                        <div>
+                                            <div class="font-medium">富邦人寿</div>
+                                            <div class="text-green-600">105%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-gray-400">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">2</span>
+                                        <div>
+                                            <div class="font-medium">安盛保险</div>
+                                            <div class="text-green-600">98.5%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-orange-500">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">3</span>
+                                        <div>
+                                            <div class="font-medium">友邦保险</div>
+                                            <div class="text-green-600">93.3%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-blue-500">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">4</span>
+                                        <div>
+                                            <div class="font-medium">宏利保险</div>
+                                            <div class="text-green-600">89%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium text-gray-900 mb-2">按产品稳定性排名</h4>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-yellow-500">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">1</span>
+                                        <div>
+                                            <div class="font-medium">安盛保险</div>
+                                            <div class="text-gray-600">波动±3%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-gray-400">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">2</span>
+                                        <div>
+                                            <div class="font-medium">友邦保险</div>
+                                            <div class="text-gray-600">波动±8%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-1 bg-gray-50 p-3 rounded border-l-4 border-blue-500">
+                                    <div class="flex items-center">
+                                        <span class="font-bold text-lg mr-2">3</span>
+                                        <div>
+                                            <div class="font-medium">宏利保险</div>
+                                            <div class="text-gray-600">波动±9%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 不同产品类型比较 -->
+                <div class="bg-white rounded-lg shadow-card p-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">不同产品类型的红利实现率比较</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">产品类型</th>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">核心特点</th>
+                                    <th class="px-4 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">典型案例</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">储蓄型</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">股票/风险资产占比高，实现率较高</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">安盛"挚汇"（98%+）、友邦"充裕未来"（90%-105%）</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">保障型</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">保证收益高，非保证红利低，实现率较低</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">保诚"理想人生"保障系列II（10%-16%）</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">养老年金型</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">现金流稳定，实现率平稳</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">国寿"傲珑创富"（周年红利平均87.70%）</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">教育金型</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">投资期长，实现率高且稳定</td>
+                                    <td class="px-4 py-3 text-sm text-gray-700">宏利"宏智传承"（97%）、友邦"资优教育"（169%）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五部分：实用指南 -->
+        <section id="guide" class="mb-12 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-compass text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">正确解读红利实现率的实用指南</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <!-- 局限性 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa fa-exclamation-triangle text-warning mr-2"></i>
+                            红利实现率的局限性
+                        </h3>
+                        <ul class="space-y-2 text-gray-700 text-sm">
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>历史≠未来</strong>：过往记录非未来指标，市场环境变化可能导致回报波动</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>平均数据掩盖差异</strong>：如保诚实现率10%-1044%，平均值无法反映具体产品</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>计算方法影响可比性</strong>：不同公司方法差异导致数据不可直接对比</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>短期数据难评长期</strong>：如万通2019年起售产品，长期表现待观察</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 评估分红能力 -->
+                    <div class="bg-white rounded-lg shadow-card p-5 hover:shadow-card-hover transition-shadow card-spacing">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                            <i class="fa fa-check-square-o text-success mr-2"></i>
+                            如何评估分红能力
+                        </h3>
+                        <ul class="space-y-2 text-gray-700 text-sm">
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>看长期趋势</strong>：考察5-10年实现率，如友邦389条数据平均93.3%</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>看产品差异</strong>：聚焦目标产品类型数据，如安盛"挚汇"表现突出</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>看投资策略</strong>：评估资产配置是否适配市场，如安盛股票占比45%</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-circle text-xs text-gray-400 mt-1.5 mr-2"></i>
+                                <span><strong>看财务实力</strong>：参考评级与偿付率，如万通惠誉A-、偿付率240%+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 如何选择产品 -->
+                <div class="bg-white rounded-lg shadow-card p-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">如何选择最适合自己的分红保险产品</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                                <span class="font-bold text-primary">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">明确需求目标</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-0.5 text-sm">
+                                    <li>短期储蓄（5-10年）：宏利"宏智传承"</li>
+                                    <li>长期储蓄（20年+）：安盛"挚汇"、友邦"充裕未来"</li>
+                                    <li>养老规划：万通"富饶千秋"、国寿"傲珑创富"</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                                <span class="font-bold text-primary">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">匹配风险承受力</h4>
+                                <p class="text-gray-700 text-sm">高实现率产品可能风险高（如保诚"创未来"），稳健型产品如安盛"挚汇"更适合风险偏好较低的投资者。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                                <span class="font-bold text-primary">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">评估综合性价比</h4>
+                                <p class="text-gray-700 text-sm">兼顾保证收益、费用、灵活性，如国寿"傲珑创富"每年5%派息，安盛"盛利"保底3.75%。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3 mt-1">
+                                <span class="font-bold text-primary">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900 mb-1">了解红利结构</h4>
+                                <p class="text-gray-700 text-sm">美式分红（国寿"傲珑创富"）现金流稳定，英式分红（保诚"隽升"）重长期增长，根据个人需求选择。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六部分：未来展望 -->
+        <section id="outlook" class="mb-12 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-binoculars text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">2025年红利实现率限高政策后的市场展望</h2>
+                </div>
+                
+                <!-- 政策影响 -->
+                <div class="bg-white rounded-lg shadow-card p-5 mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">限高政策对红利实现率的影响</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <i class="fa fa-line-chart text-primary mr-2"></i>
+                                <h4 class="font-medium text-sm">演示利率下调</h4>
+                            </div>
+                            <p class="text-gray-700 text-xs">港元≤6%、非港元≤6.5%，演示收益更现实，为高实现率创造条件</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <i class="fa fa-arrow-up text-green-600 mr-2"></i>
+                                <h4 class="font-medium text-sm">实现率预期提高</h4>
+                            </div>
+                            <p class="text-gray-700 text-xs">实际收益不变下，达标率将大幅增长，监管导向"100%达成"</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <i class="fa fa-random text-purple-600 mr-2"></i>
+                                <h4 class="font-medium text-sm">竞争转向差异化</h4>
+                            </div>
+                            <p class="text-gray-700 text-xs">如安盛"盛利"提供红利锁定（第10年锁定终期红利，保底3.75%）</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-3 rounded">
+                            <div class="flex items-center mb-2">
+                                <i class="fa fa-graduation-cap text-amber-600 mr-2"></i>
+                                <h4 class="font-medium text-sm">市场教育加强</h4>
+                            </div>
+                            <p class="text-gray-700 text-xs">保监局要求提供准确无误导的收益演示，避免销售误导</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 发展趋势 -->
+                <div class="bg-white rounded-lg shadow-card p-5 mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">2025年后红利实现率的发展趋势</h3>
+                    <div class="h-60 md:h-72">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- 投保人应对策略 -->
+                <div class="bg-white rounded-lg shadow-card p-5">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">投保人的应对策略</h3>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center mr-2.5 mt-0.5">
+                                <i class="fa fa-lightbulb-o text-green-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm"><strong>理性看待实现率</strong>：关注实际回报，而非单纯数字，80%合理演示可能优于100%乐观演示</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center mr-2.5 mt-0.5">
+                                <i class="fa fa-clock-o text-green-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm"><strong>聚焦长期表现</strong>：优先选择5年以上稳定的公司（如友邦8年平均90.35%）</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center mr-2.5 mt-0.5">
+                                <i class="fa fa-pie-chart text-green-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm"><strong>多元化配置</strong>：分散投资于稳健型（安盛"挚汇"）与高增长型（保诚"创未来"）产品</p>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-7 h-7 rounded-full bg-green-100 flex items-center justify-center mr-2.5 mt-0.5">
+                                <i class="fa fa-handshake-o text-green-600 text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-sm"><strong>咨询专业顾问</strong>：利用专业知识制定个性化方案，避免信息不对称带来的风险</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结论部分 -->
+        <section class="mb-8 section-padding">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-lg p-5 border border-primary/10">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">结论与建议</h2>
+                    
+                    <p class="text-gray-700 mb-3 text-sm leading-relaxed">
+                        红利实现率是评估香港分红险的重要指标，但需结合产品特点、保证收益等综合评估。2025年实现率差异巨大（10%-1044%），主要源于产品类型、投资策略和市场环境的不同。
+                    </p>
+                    
+                    <p class="text-gray-700 mb-3 text-sm leading-relaxed">
+                        2025年7月实施的限高政策（港元6%、非港元6.5%）将提升整体实现率，但不会影响实际回报。长期保单（20年+）实现率更稳定，更适配保险的长期属性。
+                    </p>
+                    
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        对于投资者，建议不盲目追高实现率，关注长期稳定性，根据自身需求选择产品，并进行多元化配置以降低风险。最后，定期评估保单表现并咨询专业顾问，才能在复杂的保险市场中做出最适合自己的选择。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <i class="fa fa-bar-chart text-primary text-2xl mr-2"></i>
+                        <span class="text-lg font-semibold">香港分红险分析报告</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-800 pt-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="text-base font-medium mb-3">快速导航</h3>
+                            <ul class="space-y-1.5 text-gray-400 text-sm">
+                                <li><a href="#intro" class="hover:text-primary transition-colors">概述</a></li>
+                                <li><a href="#factors" class="hover:text-primary transition-colors">影响因素</a></li>
+                                <li><a href="#companies" class="hover:text-primary transition-colors">公司分析</a></li>
+                                <li><a href="#ranking" class="hover:text-primary transition-colors">排名对比</a></li>
+                            
+                            </ul>
+                        </div>
+
+                      
+                                                                       
+                       
+                        </div>
+                                         
+                        <div>
+                          
+                            <h3 class="text-base font-medium mb-3">关于本报告</h3>
+                            <p class="text-gray-400 text-sm mb-3">
+                                本报告基于2025年最新公开数据编制，旨在为投资者提供香港分红险红利实现率的客观分析和参考。
+                            </p>
+                            <p class="text-gray-500 text-xs">
+                                © 2025 保险分析研究中心. 保留所有权利.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-10 h-10 rounded-full shadow-md flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('back-to-top');
+            
+            if (window.scrollY > 80) {
+                navbar.classList.add('shadow');
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                navbar.classList.remove('shadow');
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 返回顶部功能
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // 关闭移动菜单（如果打开）
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 初始化图表
+        window.addEventListener('load', function() {
+            // 介绍部分图表
+            const introCtx = document.getElementById('introChart').getContext('2d');
+            new Chart(introCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['友邦', '安盛', '保诚', '宏利', '国寿海外', '万通'],
+                    datasets: [{
+                        label: '红利实现率（%）',
+                        data: [93.3, 98.5, 76, 89, 90, 96],
+                        backgroundColor: [
+                            'rgba(249, 115, 22, 0.7)',
+                            'rgba(156, 163, 175, 0.7)',
+                            'rgba(239, 68, 68, 0.7)',
+                            'rgba(59, 130, 246, 0.7)',
+                            'rgba(16, 185, 129, 0.7)',
+                            'rgba(139, 92, 246, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(249, 115, 22, 1)',
+                            'rgba(156, 163, 175, 1)',
+                            'rgba(239, 68, 68, 1)',
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(16, 185, 129, 1)',
+                            'rgba(139, 92, 246, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '主要保险公司平均红利实现率对比（%）'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 120,
+                            title: {
+                                display: true,
+                                text: '实现率（%）'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // 投资策略图表
+            const strategyCtx = document.getElementById('strategyChart').getContext('2d');
+            new Chart(strategyCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+                    datasets: [{
+                        label: '稳健型策略（安盛）',
+                        data: [88, 92, 85, 90, 87, 93, 96, 98],
+                        borderColor: 'rgba(156, 163, 175, 1)',
+                        backgroundColor: 'rgba(156, 163, 175, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }, {
+                        label: '平衡型策略（友邦）',
+                        data: [85, 89, 82, 88, 85, 90, 92, 93],
+                        borderColor: 'rgba(249, 115, 22, 1)',
+                        backgroundColor: 'rgba(249, 115, 22, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }, {
+                        label: '进取型策略（保诚部分产品）',
+                        data: [92, 88, 65, 75, 60, 80, 85, 90],
+                        borderColor: 'rgba(239, 68, 68, 1)',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }, {
+                        label: '均衡型策略（宏利）',
+                        data: [82, 85, 80, 83, 81, 86, 88, 89],
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '不同投资策略的实现率变化（%）'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 50,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: '实现率（%）'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // 排名图表
+            const rankingCtx = document.getElementById('rankingChart').getContext('2d');
+            new Chart(rankingCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['富邦人寿', '安盛保险', '友邦保险', '宏利保险', '万通保险', '国寿海外', '保诚保险'],
+                    datasets: [{
+                        label: '2025年平均实现率（%）',
+                        data: [105, 98.5, 93.3, 89, 96, 90, 76],
+                        backgroundColor: [
+                            'rgba(250, 173, 20, 0.7)',
+                            'rgba(156, 163, 175, 0.7)',
+                            'rgba(249, 115, 22, 0.7)',
+                            'rgba(59, 130, 246, 0.7)',
+                            'rgba(139, 92, 246, 0.7)',
+                            'rgba(16, 185, 129, 0.7)',
+                            'rgba(239, 68, 68, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(250, 173, 20, 1)',
+                            'rgba(156, 163, 175, 1)',
+                            'rgba(249, 115, 22, 1)',
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(139, 92, 246, 1)',
+                            'rgba(16, 185, 129, 1)',
+                            'rgba(239, 68, 68, 1)'
+                        ],
+                        borderWidth: 1
+                    }, {
+                        label: '2024年平均实现率（%）',
+                        data: [103, 97, 92, 86, 94, 88, 74],
+                        backgroundColor: [
+                            'rgba(250, 173, 20, 0.4)',
+                            'rgba(156, 163, 175, 0.4)',
+                            'rgba(249, 115, 22, 0.4)',
+                            'rgba(59, 130, 246, 0.4)',
+                            'rgba(139, 92, 246, 0.4)',
+                            'rgba(16, 185, 129, 0.4)',
+                            'rgba(239, 68, 68, 0.4)'
+                        ],
+                        borderColor: [
+                            'rgba(250, 173, 20, 1)',
+                            'rgba(156, 163, 175, 1)',
+                            'rgba(249, 115, 22, 1)',
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(139, 92, 246, 1)',
+                            'rgba(16, 185, 129, 1)',
+                            'rgba(239, 68, 68, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '2024-2025年保险公司实现率对比（%）'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 70,
+                            max: 110,
+                            title: {
+                                display: true,
+                                text: '实现率（%）'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // 趋势图表
+            const trendCtx = document.getElementById('trendChart').getContext('2d');
+            new Chart(trendCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2020', '2021', '2022', '2023', '2024', '2025(预测)', '2026(预测)', '2027(预测)'],
+                    datasets: [{
+                        label: '行业平均实现率',
+                        data: [78, 82, 75, 85, 88, 92, 95, 96],
+                        borderColor: 'rgba(156, 163, 175, 1)',
+                        backgroundColor: 'rgba(156, 163, 175, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }, {
+                        label: '头部公司实现率',
+                        data: [85, 89, 83, 92, 95, 98, 100, 101],
+                        borderColor: 'rgba(16, 185, 129, 1)',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }, {
+                        label: '宏利保险',
+                        data: [80, 83, 81, 86, 88, 89, 91, 92],
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.3,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '红利实现率趋势与预测（%）'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 70,
+                            max: 110,
+                            title: {
+                                display: true,
+                                text: '实现率（%）'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    
