@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内地居民赴港购买多元货币分红储蓄险的深度解析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script>
+        // Tailwind配置
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#FF7D00',
+                        dark: '#1D2129',
+                        light: '#F2F3F5',
+                        'gray-100': '#F7F8FA',
+                        'gray-200': '#E5E6EB',
+                        'gray-300': '#C9CDD4',
+                        'gray-400': '#86909C',
+                        'gray-500': '#4E5969',
+                        'gray-600': '#272E3B',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                        'hover': '0 8px 30px rgba(0, 0, 0, 0.12)',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-active {
+                @apply bg-primary/10 text-primary border-l-4 border-primary;
+            }
+        }
+    </style>
+    <style>
+        /* 基础动画定义 */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* 图表容器样式 */
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-100 text-gray-600">
+    <!-- 顶部导航栏 - 桌面版 -->
+    <header class="hidden md:block fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-primary">
+                <i class="fa fa-line-chart mr-2"></i>港险深度解析
+            </h1>
+            <nav class="flex space-x-6">
+                <a href="#section1" class="text-gray-500 hover:text-primary transition-colors">现象概述</a>
+                <a href="#section2" class="text-gray-500 hover:text-primary transition-colors">核心优势</a>
+                <a href="#section3" class="text-gray-500 hover:text-primary transition-colors">内地局限</a>
+                <a href="#section4" class="text-gray-500 hover:text-primary transition-colors">深层原因</a>
+                <a href="#section5" class="text-gray-500 hover:text-primary transition-colors">投资建议</a>
+                <a href="#section6" class="text-gray-500 hover:text-primary transition-colors">结论</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 顶部导航栏 - 移动版 -->
+    <header class="md:hidden fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <h1 class="text-lg font-bold text-primary">
+                <i class="fa fa-line-chart mr-1"></i>港险解析
+            </h1>
+            <button id="menuToggle" class="text-gray-500 hover:text-primary transition-colors">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动导航菜单 -->
+        <div id="mobileMenu" class="hidden bg-white px-4 py-2 shadow-inner fade-in">
+            <nav class="flex flex-col space-y-3 py-2">
+                <a href="#section1" class="text-gray-500 hover:text-primary transition-colors py-1">现象概述</a>
+                <a href="#section2" class="text-gray-500 hover:text-primary transition-colors py-1">核心优势</a>
+                <a href="#section3" class="text-gray-500 hover:text-primary transition-colors py-1">内地局限</a>
+                <a href="#section4" class="text-gray-500 hover:text-primary transition-colors py-1">深层原因</a>
+                <a href="#section5" class="text-gray-500 hover:text-primary transition-colors py-1">投资建议</a>
+                <a href="#section6" class="text-gray-500 hover:text-primary transition-colors py-1">结论</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <div class="container mx-auto px-4 pt-24 pb-16 md:pt-16 md:flex">
+        <!-- 侧边导航 - 桌面版 -->
+        <aside class="hidden md:block w-64 fixed left-4 top-24 bottom-8 overflow-y-auto scrollbar-hide pr-4">
+            <nav class="bg-white rounded-lg shadow-card p-4 sticky top-0">
+                <h2 class="text-lg font-semibold text-gray-600 mb-4 pb-2 border-b border-gray-200">目录</h2>
+                <ul class="space-y-1">
+                    <li>
+                        <a href="#section1" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-area-chart w-5 text-center mr-2 text-gray-400"></i>一、现象概述
+                        </a>
+                        <ul class="pl-8 mt-1 space-y-1 hidden submenu">
+                            <li><a href="#section1-1" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">1.1 港险市场的蓬勃发展</a></li>
+                            <li><a href="#section1-2" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">1.2 产品偏好与结构分析</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section2" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-star w-5 text-center mr-2 text-gray-400"></i>二、核心吸引力
+                        </a>
+                        <ul class="pl-8 mt-1 space-y-1 hidden submenu">
+                            <li><a href="#section2-1" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.1 预期收益优势</a></li>
+                            <li><a href="#section2-2" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.2 多元货币选择</a></li>
+                            <li><a href="#section2-3" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.3 全球资产配置</a></li>
+                            <li><a href="#section2-4" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.4 财富传承机制</a></li>
+                            <li><a href="#section2-5" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.5 资产隔离保障</a></li>
+                            <li><a href="#section2-6" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.6 税务优化优势</a></li>
+                            <li><a href="#section2-7" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">2.7 资金运用灵活</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section3" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-exclamation-triangle w-5 text-center mr-2 text-gray-400"></i>三、内地保险局限
+                        </a>
+                        <ul class="pl-8 mt-1 space-y-1 hidden submenu">
+                            <li><a href="#section3-1" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">3.1 收益水平局限</a></li>
+                            <li><a href="#section3-2" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">3.2 货币单一性限制</a></li>
+                            <li><a href="#section3-3" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">3.3 传承机制不足</a></li>
+                            <li><a href="#section3-4" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">3.4 监管与创新限制</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section4" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-search w-5 text-center mr-2 text-gray-400"></i>四、深层次原因
+                        </a>
+                        <ul class="pl-8 mt-1 space-y-1 hidden submenu">
+                            <li><a href="#section4-1" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">4.1 宏观经济变化</a></li>
+                            <li><a href="#section4-2" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">4.2 市场需求转变</a></li>
+                            <li><a href="#section4-3" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">4.3 香港市场调整</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section5" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-lightbulb-o w-5 text-center mr-2 text-gray-400"></i>五、投资建议
+                        </a>
+                        <ul class="pl-8 mt-1 space-y-1 hidden submenu">
+                            <li><a href="#section5-1" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">5.1 适合人群画像</a></li>
+                            <li><a href="#section5-2" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">5.2 购买注意事项</a></li>
+                            <li><a href="#section5-3" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">5.3 风险因素应对</a></li>
+                            <li><a href="#section5-4" class="block px-3 py-1.5 text-sm rounded-md hover:bg-gray-100 transition-colors">5.4 未来趋势展望</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section6" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition-colors" onclick="setActiveNav(this)">
+                            <i class="fa fa-check-circle w-5 text-center mr-2 text-gray-400"></i>六、结论
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 主要内容 -->
+        <main class="w-full md:ml-72">
+            <!-- 标题区域 -->
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-gray-800 mb-4 text-balance">
+                    内地居民赴港购买多元货币分红储蓄险的深度解析
+                </h1>
+                <div class="flex items-center text-gray-500 text-sm space-x-4">
+                    <span><i class="fa fa-calendar-o mr-1"></i> 2025年09月16日</span>
+                    <span><i class="fa fa-tag mr-1"></i> 金融分析</span>
+                    <span><i class="fa fa-clock-o mr-1"></i> 阅读时间: 约25分钟</span>
+                </div>
+                <div class="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                    <p class="text-gray-700">
+                        <i class="fa fa-info-circle text-primary mr-2"></i>
+                        本文深入分析香港多元货币分红储蓄险的市场现状、核心优势、内地保险局限性，以及赴港投保的深层次原因，并提供专业投资建议，帮助读者全面了解这一投资选择。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 第一部分：现象概述 -->
+            <section id="section1" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-area-chart text-primary mr-2"></i>一、现象概述：港险热潮持续升温
+                </h2>
+
+                <div id="section1-1" class="mb-8">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">1.1 港险市场的蓬勃发展</h3>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        2025年香港保险市场持续吸引内地投资者，根据香港保监局披露，仅第一季度内地投保金额已突破180亿港元，同比增幅达22%，远超全球保险市场平均增速。2024年全年，内地访客赴港投保627.98亿港元，比2023年同期(589.71亿港元)增长6.49%。
+                    </p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        这一数字占全港新单保费(2,198亿港元)的29%，近三分之一，相当于每3份新单中就有1份来自内地访客。2025年第一季度全港长期业务新单保费飙升至934亿港元，相较2024年同期大幅增长43.1%，一举刷新自2001年有记录以来的最高季度保费数据。
+                    </p>
+
+                    <!-- 图表1：香港保险市场保费增长 -->
+                    <div class="mt-6 mb-4">
+                        <h4 class="text-lg font-medium text-gray-700 mb-3">内地访客赴港投保金额趋势 (2023-2025)</h4>
+                        <div class="chart-container">
+                            <canvas id="premiumChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-500 text-center mt-2">数据来源：香港保监局</p>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-primary mt-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fa fa-bar-chart text-primary text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-medium text-primary">关键数据亮点</h4>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    2025年Q1内地访客赴港投保金额180亿港元，同比增长22%；2024年全年内地访客投保627.98亿港元，占全港新单保费29%；2025年Q1全港长期业务新单保费934亿港元，同比增长43.1%。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="section1-2">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">1.2 产品偏好与结构分析</h3>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        内地访客赴港投保的保费结构中，终身寿险、重疾险分别占这些保单数目的59%、28%。内地访客新造业务保费上涨，主要由终身寿险和储蓄寿险的需求带动。以新单保单数统计，两者合计占比62.1%，其中终身寿险占比58.5%，储蓄寿险占比3.6%。
+                    </p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        值得注意的是，2025年7月1日起，香港保监局实施新规定，将分红保单演示利率上限从7%调整为6.5%(非港元保单)和6%(港元保单)，标志着"6.5%时代"正式到来。这一政策调整促使保险公司更加注重产品的实际投资能力和长期收益稳定性，而非仅依靠高演示利率吸引客户。
+                    </p>
+
+                    <!-- 图表2：内地访客赴港投保产品结构 -->
+                    <div class="mt-6 mb-4">
+                        <h4 class="text-lg font-medium text-gray-700 mb-3">内地访客赴港投保产品类型占比</h4>
+                        <div class="chart-container">
+                            <canvas id="productStructureChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-500 text-center mt-2">数据来源：香港保监局2024年度报告</p>
+                    </div>
+
+                    <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-accent mt-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fa fa-exclamation-circle text-accent text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-medium text-accent">政策提示</h4>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    2025年7月1日起，香港保监局实施新规定：非港元分红保单演示利率上限从7%调整为6.5%，港元分红保单调整为6%。投资者应关注这一政策变化对产品预期收益的影响。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第二部分：核心吸引力 -->
+            <section id="section2" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-star text-primary mr-2"></i>二、核心吸引力：多元货币分红储蓄险的七大优势
+                </h2>
+
+                <!-- 2.1 预期收益优势 -->
+                <div id="section2-1" class="mb-10">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">2.1 预期收益优势：长期复利显著高于内地</h3>
+                    </div>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        香港分红储蓄险的预期年化回报率普遍能达到6%-7%，而内地同类分红险产品最高通常不超过3.5%，增额寿类产品则更低。以香港万通保险的"富饶千秋储蓄计划"为例，长期预期IRR约7.21%，2年缴期下第10年预期年化收益约4.19%，第20年升至6%。
+                    </p>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        香港保险产品的收益结构由"高预期收益+低保证收益"组成，其保证收益率虽普遍在1.5%-2.3%区间，但通过非保证红利可实现6%-7%的长期年化收益。这种结构与内地保险形成鲜明对比，内地储蓄险的收益是有保证的，目前为3%。
+                    </p>
+
+                    <!-- 图表3：香港与内地保险收益对比 -->
+                    <div class="mt-6 mb-6">
+                        <h4 class="text-lg font-medium text-gray-700 mb-3">香港与内地保险产品预期年化收益对比</h4>
+                        <div class="chart-container">
+                            <canvas id="returnComparisonChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-500 text-center mt-2">数据来源：各保险公司产品说明书及行业报告</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                                <i class="fa fa-check-circle text-green-500 mr-2"></i>香港保险分红实现率
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                从过往八年香港各大保险公司的回报分红情况来看，实际的分红实现率一般在98%到102%之间，收益一般在6%-7%之间。以保诚隽富多元货币计划为例，2025年总现金价值比率高达105%，超额达成目标。
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                                <i class="fa fa-exclamation-circle text-yellow-500 mr-2"></i>内地保险分红实现率
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                内地市场头部公司分红实现率普遍在30%-50%，平安最高仅40%，太平洋人寿徘徊在40%-66%。这种实现率的巨大差距，使得香港保险的实际收益更有可能接近甚至超过预期水平。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2.2 多元货币选择 -->
+                <div id="section2-2" class="mb-10">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
+                            <i class="fa fa-exchange"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">2.2 多元货币选择与灵活转换机制</h3>
+                    </div>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        香港保险支持美元、人民币、英镑、欧元等多种货币投保，部分产品如安盛挚汇甚至提供港币、澳门币、澳元、新加坡元、加拿大元等共9种选择；内地保险大多仅支持人民币单币种。这种多元货币选择为投资者提供了显著的汇率风险对冲能力。
+                    </p>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        更重要的是，香港保险支持每年一次全部或部分转换，部分转换功能相当于"保单拆分"，支持设置新的受保人与受益人。以万通富饶千秋Plus为例，提供10种保单货币选择，包括市场独有的瑞士法郎以及2025年新增的欧元，最快1年即可自由转换。
+                    </p>
+
+                    <div class="mt-6 bg-blue-50 rounded-lg p-5 border border-blue-100">
+                        <h4 class="font-medium text-primary mb-3">货币转换功能的核心价值</h4>
+                        <ul class="space-y-3">
+                            <li class="flex">
+                                <i class="fa fa-graduation-cap text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-gray-700">子女留学规划：</span>
+                                    <span class="text-gray-600">可提前转换目标货币，规避汇率风险，确保留学资金稳定</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-globe text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-gray-700">移民资产配置：</span>
+                                    <span class="text-gray-600">移民前调整资产货币结构，减少换汇损失，实现平滑过渡</span>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-shield text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium text-gray-700">汇率风险对冲：</span>
+                                    <span class="text-gray-600">通过多币种持有，分散单一货币波动风险，稳定资产价值</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
+                        <h4 class="font-medium text-gray-700 mb-3">典型产品货币选择对比</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">产品名称</th>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">提供货币种类</th>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">转换频率</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">万通富饶千秋Plus</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">10种（含瑞士法郎、欧元）</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">最快1年</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">安盛挚汇</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">9种（含澳门币、加元）</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">每年1次</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">友邦环宇盈活</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">6种主流货币</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">每年1次</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">内地主流产品</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">仅人民币</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">不支持</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2.3 全球资产配置 -->
+                <div id="section2-3" class="mb-10">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">2.3 全球资产配置的投资优势</h3>
+                    </div>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        香港保险资金具备全球资产配置优势，可投资于全球多个金融市场的股票、债券、基金、房地产等各类资产。以宏利环球货币计划和友邦盈御多元货币计划2为例，非固收类资产预期投资比例均高达75%。
+                    </p>
+                    
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        香港保险公司的投资以资产配置为出发点，多元化配置，能在全球范围内进行分散投资。这既包括不同的投资产品类别，如股权、债券、另类投资等，也包括不同的地域和不同的货币资产类型。
+                    </p>
+
+                    <!-- 图表4：香港保险资金典型资产配置比例 -->
+                    <div class="mt-6 mb-6">
+                        <h4 class="text-lg font-medium text-gray-700 mb-3">香港保险资金典型资产配置比例</h4>
+                        <div class="chart-container">
+                            <canvas id="assetAllocationChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-500 text-center mt-2">数据来源：宏利、友邦等公司2024年度投资报告</p>
+                    </div>
+
+                    <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-500 mt-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fa fa-lightbulb-o text-green-500 text-xl"></i>
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="text-sm font-medium text-green-700">全球配置核心优势</h4>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    香港保险资金投资于海外权益类资产的比例平均超过30%，这种全球投资策略使香港保险能够有效分散单一市场风险，获取更广泛的投资机会，这是内地保险产品所不具备的优势。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2.4-2.7 其他优势（精简展示） -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <!-- 2.4 财富传承机制 -->
+                    <div id="section2-4" class="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:shadow-hover transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-700">2.4 灵活的财富传承机制</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>无限次更换被保人，突破生命周期限制</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>指定受益人无需遗产公示，保护隐私</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>支持保单分拆，实现个性化传承</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>身故赔偿可分期支付，形成持续现金流</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.5 资产隔离与法律保障 -->
+                    <div id="section2-5" class="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:shadow-hover transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-700">2.5 资产隔离与法律保障</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>投保人绝对控制，规避资产共有风险</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>英美法系保护，内地司法机关无权直接执行</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>信托结构设计，有效隔离婚姻、债务风险</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>私有财产权神圣不可侵犯的法律保障</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.6 税务优化优势 -->
+                    <div id="section2-6" class="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:shadow-hover transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2">
+                                <i class="fa fa-calculator"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-700">2.6 税务优化与财富传承</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>分红收益免缴个人所得税</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>资本利得税豁免，保单增值无需缴税</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>指定受益人且保额≤100万港元免遗产税</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>重疾/医疗/身故理赔金两地均免征个税</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.7 灵活的资金运用 -->
+                    <div id="section2-7" class="bg-gray-50 rounded-lg p-5 border border-gray-200 hover:shadow-hover transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-2">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-700">2.7 灵活的资金运用</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>支持部分提取，满足不同阶段资金需求</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>保单贷款额度可达现金价值70%-90%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>贷款利率2%-8%，部分低至3.65%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-primary mt-1 mr-2"></i>
+                                <span>提供疾病预支保障，锁定康复备用金</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第三部分：内地保险的局限性分析 -->
+            <section id="section3" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-exclamation-triangle text-primary mr-2"></i>三、内地保险的局限性分析
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 3.1 收益水平局限 -->
+                    <div id="section3-1">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">3.1 收益水平与实现率的局限</h3>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            根据中国保险行业协会2025年一季度数据，普通型人身险产品预定利率研究值较上季度下降21个基点至2.13%，与现行监管上限差距扩大至37个基点。
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            若二季度延续下行趋势，预定利率上限或于三季度下调至2.0%-2.25%，成为近十年来最低水平。
+                        </p>
+
+                        <div class="mt-4 bg-red-50 rounded-lg p-3 border border-red-100">
+                            <p class="text-sm text-gray-700">
+                                <i class="fa fa-warning text-red-500 mr-2"></i>
+                                利率调整直接影响产品竞争力：以增额终身寿险为例，若预定利率从2.5%降至2.25%，30年期保单现金价值将缩水8%-10%。
+                            </p>
+                        </div>
+
+                        <!-- 图表5：分红实现率对比 -->
+                        <div class="mt-6">
+                            <h4 class="text-base font-medium text-gray-700 mb-2">分红实现率对比 (%)</h4>
+                            <div class="chart-container h-250">
+                                <canvas id="dividendRateChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3.2 货币单一性限制 -->
+                    <div id="section3-2">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">3.2 货币单一性与投资范围限制</h3>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            内地保险大多仅支持人民币单币种，无法满足高净值人群多元化资产配置的需求。这种单一货币结构使投资者面临较大的汇率风险。
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            内地保险资金主要投资在内地资产，投资方向主要集中在国内债券、银行存款、基础设施建设项目等领域，对权益类资产投资比例有上限限制。
+                        </p>
+
+                        <div class="mt-6 p-4 bg-white border border-gray-200 rounded-lg">
+                            <h4 class="font-medium text-gray-700 mb-2 text-sm">内地保险资金主要投资方向</h4>
+                            <div class="flex items-center justify-between mb-2 text-sm">
+                                <span class="text-gray-600">国内债券</span>
+                                <div class="w-3/5 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                <span class="text-gray-600 ml-2">45%</span>
+                            </div>
+                            <div class="flex items-center justify-between mb-2 text-sm">
+                                <span class="text-gray-600">银行存款</span>
+                                <div class="w-3/5 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 20%"></div>
+                                </div>
+                                <span class="text-gray-600 ml-2">20%</span>
+                            </div>
+                            <div class="flex items-center justify-between mb-2 text-sm">
+                                <span class="text-gray-600">基础设施</span>
+                                <div class="w-3/5 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 15%"></div>
+                                </div>
+                                <span class="text-gray-600 ml-2">15%</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-gray-600">权益类资产</span>
+                                <div class="w-3/5 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 10%"></div>
+                                </div>
+                                <span class="text-gray-600 ml-2">≤10%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3.3 传承机制不足 -->
+                    <div id="section3-3">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">3.3 功能设计与传承机制不足</h3>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            内地保险产品在功能设计上相对保守，特别是在财富传承方面。内地主流增额寿产品普遍缺乏传承规划设计，无法满足高净值人群对财富定向传承、多代延续的需求。
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            在资产隔离方面，内地法律体系下，资产传承往往伴随着复杂的程序，若涉及家族成员意见分歧或债务纠纷，还可能触发司法分割，导致资产流向不确定性增加。
+                        </p>
+
+                        <div class="mt-6 bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 class="font-medium text-gray-700 mb-3 text-sm">内地保险传承功能缺失对比</h4>
+                            <table class="min-w-full divide-y divide-gray-200 text-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="px-3 py-2 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">功能项</th>
+                                        <th class="px-3 py-2 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">香港保险</th>
+                                        <th class="px-3 py-2 bg-gray-50 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">内地保险</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-3 py-2 whitespace-nowrap text-gray-600">更换被保人</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-green-600">无限次</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-red-600">不支持</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-3 py-2 whitespace-nowrap text-gray-600">保单分拆</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-green-600">支持</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-red-600">不支持</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-3 py-2 whitespace-nowrap text-gray-600">分期赔付</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-green-600">支持</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-red-600">极少支持</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-3 py-2 whitespace-nowrap text-gray-600">资产隔离</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-green-600">英美法系保护</td>
+                                        <td class="px-3 py-2 whitespace-nowrap text-center text-red-600">法律风险较高</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 3.4 监管与创新限制 -->
+                    <div id="section3-4">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">3.4 监管环境与产品创新限制</h3>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            内地监管部门对保险行业监管细致且严格，从保险费率厘定、产品设计到投资方向等各个环节都有明确规定。这使得内地保险产品在收益稳定性、功能规范性等方面有较高保障，但也导致产品创新相对受限。
+                        </p>
+                        <p class="mb-4 text-gray-600 leading-relaxed text-sm">
+                            不过，在消费者权益保护方面，内地有较强的兜底政策，保险公司与消费者发生纠纷时，监管部门和法院在多数情况下更倾向于保护消费者权益。
+                        </p>
+
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                            <h4 class="font-medium text-primary mb-2 text-sm">监管差异总结</h4>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                    <span>内地：监管严格，保障消费者权益，但限制产品创新和收益潜力</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                    <span>香港：监管灵活，鼓励产品创新，但消费者需自行承担更多风险</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                    <span>内地：预定利率上限逐步下调，产品收益持续走低</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
+                                    <span>香港：演示利率上限调整，更注重实际投资能力</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第四部分：深层次原因分析 -->
+            <section id="section4" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-search text-primary mr-2"></i>四、近年来港险热的深层次原因分析
+                </h2>
+
+                <div class="space-y-8">
+                    <!-- 4.1 宏观经济变化 -->
+                    <div id="section4-1">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">4.1 宏观经济与政策环境变化</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa fa-arrow-down text-red-500 mr-2"></i>
+                                    <h4 class="font-medium text-gray-700">内地利率下行趋势</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    2025年一季度普通型人身险预定利率研究值已降至2.13%，逼近监管现行2.5%的上限阈值，行业预计最早将于三季度迈入"2%时代"，高净值人群投资需求难以满足。
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa fa-exchange text-blue-500 mr-2"></i>
+                                    <h4 class="font-medium text-gray-700">汇率波动加剧</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    2025年3月美元兑人民币汇率单月波动幅度达3.7%，若未选择货币转换条款可能造成实际收益缩水，增加了对多元货币资产的需求。
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa fa-file-text-o text-green-500 mr-2"></i>
+                                    <h4 class="font-medium text-gray-700">CRS与税务监管加强</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    2025年，CRS信息交换机制全面升级，内地金税四期系统深度应用，个人境外资产暴露风险显著增加，香港保险的税务优势更加凸显。
+                                </p>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa fa-map-marker text-orange-500 mr-2"></i>
+                                    <h4 class="font-medium text-gray-700">粤港澳大湾区政策支持</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    2025年4月，五部门发布政策支持粤港澳保险机构合作开发跨境保险产品，为内地居民购买香港保险提供更多便利。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4.2 市场需求转变 -->
+                    <div id="section4-2">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">4.2 市场需求与投资偏好转变</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead>
+                                    <tr>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">需求类型</th>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">具体表现</th>
+                                        <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">港险解决方案</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">高净值人群增长</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">高净值人群规模扩大，全球化资产配置需求增长</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">全球资产配置，多币种选择</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">中高端医疗需求</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">对高品质医疗服务需求增加，追求全球医疗资源</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">高端医疗险，全球医疗网络</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">财富传承意识增强</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">关注家族财富长期稳定传承，需求专业工具</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">无限次更换被保人，保单分拆</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">资产避险需求上升</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">经济不确定性增加，寻求资产保护手段</td>
+                                        <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">资产隔离，法律保障，分散风险</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 4.3 香港市场调整 -->
+                    <div id="section4-3">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">4.3 香港保险市场的适应性调整</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-hover transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mb-3">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-700 mb-2">产品创新升级</h4>
+                                <p class="text-sm text-gray-600">
+                                    2025年推出"颐X·乐享"等产品，强化现金提取功能，联动高端养老社区，满足多元化需求。
+                                </p>
+                            </div>
+                            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-hover transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-3">
+                                    <i class="fa fa-smile-o"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-700 mb-2">服务质量提升</h4>
+                                <p class="text-sm text-gray-600">
+                                    匹配内地高端养老社区，提供"旅居+长居"双模式，配套医疗、文娱、护理全链条服务。
+                                </p>
+                            </div>
+                            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-hover transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-3">
+                                    <i class="fa fa-gift"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-700 mb-2">优惠活动增加</h4>
+                                <p class="text-sm text-gray-600">
+                                    推出限时预缴利率优惠和保费回赠，强化多币种转换、灵活提取和财富传承功能。
+                                </p>
+                            </div>
+                            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-hover transition-shadow">
+                                <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mb-3">
+                                    <i class="fa fa-microchip"></i>
+                                </div>
+                                <h4 class="font-medium text-gray-700 mb-2">科技赋能体验</h4>
+                                <p class="text-sm text-gray-600">
+                                    应用区块链技术实现电子保单即时存证，投保全程从14天压缩至72小时内。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第五部分：投资建议与风险提示 -->
+            <section id="section5" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-lightbulb-o text-primary mr-2"></i>五、投资建议与风险提示
+                </h2>
+
+                <div class="space-y-8">
+                    <!-- 5.1 适合人群画像 -->
+                    <div id="section5-1">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">5.1 适合购买香港保险的人群画像</h3>
+                        <p class="mb-4 text-gray-600 leading-relaxed">
+                            香港保险并非适合所有人，以下几类人群可能更能从香港保险中获益：
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4 border border-blue-100">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white mr-3">
+                                        <i class="fa fa-plane"></i>
+                                    </div>
+                                    <h4 class="font-medium text-blue-800">有跨境需求人群</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">
+                                    包括有子女留学计划、考虑移民或经常往返内地与香港的人士，能有效利用多元货币功能。
+                                </p>
+                            </div>
+                            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-4 border border-green-100">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white mr-3">
+                                        <i class="fa fa-diamond"></i>
+                                    </div>
+                                    <h4 class="font-medium text-green-800">高净值财富管理者</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">
+                                    资产规模较大、有全球资产配置需求的高净值人士，可利用资产隔离、税务优化功能。
+                                </p>
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-4 border border-purple-100">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded-full bg-purple-500 flex items-center justify-center text-white mr-3">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <h4 class="font-medium text-purple-800">长期投资者</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">
+                                    能够接受10年以上投资周期的长期投资者，可充分享受香港保险的长期复利效应。
+                                </p>
+                            </div>
+                            <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-4 border border-red-100">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white mr-3">
+                                        <i class="fa fa-heartbeat"></i>
+                                    </div>
+                                    <h4 class="font-medium text-red-800">高品质医疗需求者</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">
+                                    对医疗服务有较高要求，希望获得全球医疗资源的人群，香港医疗险提供全面保障。
+                                </p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-4 border border-orange-100">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center text-white mr-3">
+                                        <i class="fa fa-users"></i>
+                                    </div>
+                                    <h4 class="font-medium text-orange-800">家族财富传承者</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">
+                                    关注家族财富长期稳定传承的人群，可利用无限次更换被保人、保单分拆等功能。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5.2 购买注意事项 -->
+                    <div id="section5-2">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">5.2 购买香港保险的注意事项</h3>
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 mb-6">
+                            <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                                <i class="fa fa-check-circle text-primary mr-2"></i>购买前的准备工作
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">1</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700 font-medium">了解政策要求</p>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            携带有效身份证件（身份证、港澳通行证），年满18周岁，未成年人需由监护人陪同。了解外汇管制政策，每人每年5万美元购汇额度的使用限制。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">2</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700 font-medium">资金准备</p>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            准备足够的资金，首期保费建议使用香港账户支付，避免大额人民币直接汇款。可通过合法渠道将资金转入香港银行账户。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">3</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700 font-medium">选择正规渠道</p>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            通过香港持牌保险公司或经认证的保险经纪购买，核实代理人的执业资格，避免通过非正规渠道购买地下保单。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">4</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700 font-medium">产品理解</p>
+                                        <p class="text-sm text-gray-600 mt-1">
+                                            预留充足时间理解产品条款，特别是保证与非保证收益部分、费用扣除、退保规定等关键内容，必要时咨询专业理财顾问。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 mb-6">
+                            <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                                <i class="fa fa-check-circle text-primary mr-2"></i>购买流程与文件要求
+                            </h4>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead>
+                                        <tr>
+                                            <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">流程步骤</th>
+                                            <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">具体内容</th>
+                                            <th class="px-4 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">所需文件</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">预约咨询</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">提前与香港保险顾问预约，明确需求与预算</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">身份证明复印件</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">赴港签约</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">亲自到香港保险公司或经纪公司签署文件</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">身份证、港澳通行证、住址证明</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">支付保费</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">通过香港银行账户转账或信用卡支付</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">银行账户信息、信用卡</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">保单生成</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">保险公司审核通过后生成电子保单</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">保单号码、电子保单文件</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">冷静期确认</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">14天冷静期内可无损失退保</td>
+                                            <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-600">确认书签署文件</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 rounded-lg p-5 border border-yellow-100">
+                            <h4 class="font-medium text-yellow-800 mb-3 flex items-center">
+                                <i class="fa fa-exclamation-triangle text-yellow-600 mr-2"></i>特别注意事项
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-yellow-600 mt-1 mr-3"></i>
+                                    <p class="text-sm text-gray-700">
+                                        <span class="font-medium">外汇管制合规：</span>
+                                        购买香港保险属于境外投资，应遵守国家外汇管理规定，避免"蚂蚁搬家"等违规换汇行为，每次购汇需如实申报用途。
+                                    </p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-yellow-600 mt-1 mr-3"></i>
+                                    <p class="text-sm text-gray-700">
+                                        <span class="font-medium">法律管辖差异：</span>
+                                        香港保险受香港法律管辖，与内地法律体系存在差异，发生纠纷需按香港法律途径解决，内地法院判决在香港执行存在难度。
+                                    </p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-yellow-600 mt-1 mr-3"></i>
+                                    <p class="text-sm text-gray-700">
+                                        <span class="font-medium">文件保存：</span>
+                                        妥善保存保单文件、缴费凭证等重要资料，建议进行电子备份，记录保险公司联系方式和保单号码。
+                                    </p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-angle-right text-yellow-600 mt-1 mr-3"></i>
+                                    <p class="text-sm text-gray-700">
+                                        <span class="font-medium">后续服务安排：</span>
+                                        了解保单后续服务流程，包括保费续缴、信息变更、理赔申请等，确认是否提供内地服务支持。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 5.3 风险因素应对 -->
+                    <div id="section5-3">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">5.3 潜在风险与应对策略</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                                    <i class="fa fa-exclamation-circle text-red-500 mr-2"></i>主要风险因素
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">汇率波动风险：</span>
+                                            多币种保单面临汇率波动影响，可能导致实际收益缩水，尤其在人民币升值周期。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">收益不确定性：</span>
+                                            非保证收益部分可能无法实现，尤其在全球经济下行周期，投资收益可能低于预期。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">流动性风险：</span>
+                                            早期退保损失较大，资金锁定周期长，通常需要10年以上才能体现收益优势。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">政策变动风险：</span>
+                                            内地与香港政策变化可能影响投保、理赔、资金汇出等环节的便利性。
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                                    <i class="fa fa-shield text-green-500 mr-2"></i>风险应对策略
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">分批投入策略：</span>
+                                            避免一次性大额投入，可分2-3年逐步配置，降低汇率时点风险和流动性压力。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">货币分散配置：</span>
+                                            利用多币种功能，按需求配置不同货币比例，对冲单一货币波动风险。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">长期持有计划：</span>
+                                            制定至少15-20年的持有计划，避免短期波动影响，充分享受复利效应。
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <p class="text-sm text-gray-700">
+                                            <span class="font-medium">专业咨询支持：</span>
+                                            选择有内地服务团队的保险公司，确保后续服务顺畅，及时获取政策变动信息。
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5.4 未来趋势展望 -->
+                    <div id="section5-4">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">5.4 未来趋势与产品发展</h3>
+                        <div class="bg-white rounded-lg border border-gray-200 p-5 mb-6">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="border border-blue-100 rounded-lg p-4 bg-blue-50">
+                                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-3">
+                                        <i class="fa fa-line-chart"></i>
+                                    </div>
+                                    <h4 class="font-medium text-blue-800 mb-2">收益趋势</h4>
+                                    <p class="text-sm text-gray-700">
+                                        受全球利率下行影响，香港保险预期收益可能逐步回落，预计未来3-5年非保证收益将稳定在5.5%-6.5%区间，但仍高于内地同类产品。
+                                    </p>
+                                </div>
+                                <div class="border border-purple-100 rounded-lg p-4 bg-purple-50">
+                                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mb-3">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <h4 class="font-medium text-purple-800 mb-2">产品创新</h4>
+                                    <p class="text-sm text-gray-700">
+                                        产品将更注重灵活性和多元功能整合，如"保险+信托"组合、跨境医疗资源对接、智能理赔系统等创新将成为主流趋势。
+                                    </p>
+                                </div>
+                                <div class="border border-green-100 rounded-lg p-4 bg-green-50">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-3">
+                                        <i class="fa fa-handshake-o"></i>
+                                    </div>
+                                    <h4 class="font-medium text-green-800 mb-2">跨境服务</h4>
+                                    <p class="text-sm text-gray-700">
+                                        粤港澳大湾区保险互联互通将深化，预计2026-2027年将实现部分产品内地理赔通、缴费通，服务体验进一步提升。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                                <i class="fa fa-lightbulb-o text-primary mr-2"></i>投资者行动建议
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">1</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700">
+                                            评估自身风险承受能力和资金流动性需求，确保投资期限与产品特性匹配。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">2</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700">
+                                            多元化配置，香港保险占个人总资产比例建议控制在20%-30%以内。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">3</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700">
+                                            优先选择有悠久历史、高分红实现率和完善内地服务网络的保险公司。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="text-primary text-xs font-medium">4</span>
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-sm text-gray-700">
+                                            关注政策变化，特别是粤港澳大湾区保险互联互通进展，把握服务优化机遇。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第六部分：结论 -->
+            <section id="section6" class="bg-white rounded-xl shadow-card p-6 md:p-8 mb-8 fade-in">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b border-gray-200">
+                    <i class="fa fa-check-circle text-primary mr-2"></i>六、结论
+                </h2>
+
+                <div class="space-y-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        香港多元货币分红储蓄险作为一种跨境金融工具，在当前宏观经济环境下展现出独特的吸引力，特别是其长期复利收益潜力、多元货币选择、全球资产配置能力和灵活的财富传承机制，满足了内地高净值人群多元化的财务需求。
+                    </p>
+                    
+                    <p class="text-gray-700 leading-relaxed">
+                        然而，投资者也需清醒认识到其中的风险与局限，包括汇率波动影响、收益不确定性、流动性限制以及政策变动风险。香港保险并非适合所有投资者，而是更适合有跨境需求、资产规模较大、投资期限较长且具备一定风险承受能力的人群。
+                    </p>
+                    
+                    <p class="text-gray-700 leading-relaxed">
+                        从市场发展趋势看，随着粤港澳大湾区金融互联互通的深化和香港保险市场的持续创新，未来内地居民购买香港保险的便利性将进一步提升，产品功能也将更加多元化和个性化。但与此同时，监管环境也可能更加规范，投资者需密切关注政策变化。
+                    </p>
+                    
+                    <div class="bg-primary/5 rounded-lg p-5 border border-primary/20">
+                        <h4 class="font-medium text-primary mb-3">综合建议</h4>
+                        <p class="text-gray-700 leading-relaxed mb-3">
+                            对于考虑赴港购买保险的投资者，建议采取以下策略：
+                        </p>
+                        <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                            <li>进行全面的自我财务评估，明确投资目标和风险承受能力</li>
+                            <li>选择正规渠道和优质保险公司，优先考虑分红实现率高、服务网络完善的机构</li>
+                            <li>采取分散投资策略，合理控制香港保险在个人总资产中的占比</li>
+                            <li>制定长期持有计划，充分发挥复利效应，避免短期退保造成损失</li>
+                            <li>关注政策变化，特别是跨境保险服务的创新与便利化措施</li>
+                            <li>必要时咨询专业的跨境理财顾问，获取个性化的配置建议</li>
+                        </ol>
+                    </div>
+                    
+                    <p class="text-gray-700 leading-relaxed">
+                        总而言之，香港多元货币分红储蓄险是一种工具，其价值取决于是否与投资者的实际需求相匹配。理性认识、科学配置、长期持有，才能最大限度发挥其在资产配置中的积极作用，实现财富的保值增值与传承目标。
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">关于本报告</h3>
+                    <p class="text-gray-400 text-sm">
+                        本报告旨在客观分析香港多元货币分红储蓄险的市场现状、优势与风险，为投资者提供参考，不构成任何投资建议。
+                    </p>
+                </div>
+                <div>
+             
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">免责声明</h3>
+                    <p class="text-gray-400 text-sm">
+                        市场有风险，投资需谨慎。本文信息仅供参考，不代表任何投资建议。投资者应根据自身情况自主决策，必要时咨询专业顾问。
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+                <p>© 2025 港险深度解析报告 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动菜单切换
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 侧边栏子菜单切换
+        document.querySelectorAll('aside nav > ul > li > a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.classList.contains('submenu')) {
+                    e.preventDefault();
+                    submenu.classList.toggle('hidden');
+                }
+            });
+        });
+
+        // 设置当前激活的导航项
+        function setActiveNav(element) {
+            document.querySelectorAll('aside nav a').forEach(item => {
+                item.classList.remove('nav-active');
+            });
+            element.classList.add('nav-active');
+        }
+
+        // 页面加载完成后初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 图表1：内地访客赴港投保金额趋势
+            const premiumCtx = document.getElementById('premiumChart').getContext('2d');
+            new Chart(premiumCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2023 Q1', '2023 Q2', '2023 Q3', '2023 Q4', '2024 Q1', '2024 Q2', '2024 Q3', '2024 Q4', '2025 Q1'],
+                    datasets: [{
+                        label: '投保金额（亿港元）',
+                        data: [147.43, 147.43, 147.43, 147.43, 156, 141, 169, 161, 180],
+                        borderColor: '#165DFF',
+                        backgroundColor: 'rgba(22, 93, 255, 0.1)',
+                        tension: 0.3,
+                        fill: true,
+                        pointBackgroundColor: '#165DFF',
+                        pointRadius: 4,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `投保金额: ${context.raw} 亿港元`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 100,
+                            title: {
+                                display: true,
+                                text: '金额（亿港元）'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 图表2：内地访客赴港投保产品结构
+            const productCtx = document.getElementById('productStructureChart').getContext('2d');
+            new Chart(productCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['终身寿险', '重疾险', '储蓄寿险', '医疗险', '其他'],
+                    datasets: [{
+                        data: [59, 28, 3.6, 5.2, 4.2],
+                        backgroundColor: [
+                            '#165DFF',
+                            '#36CFC9',
+                            '#FF7D00',
+                            '#722ED1',
+                            '#F5222D'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.raw}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 图表3：香港与内地保险收益对比
+            const returnCtx = document.getElementById('returnComparisonChart').getContext('2d');
+            new Chart(returnCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['香港保险（保证）', '香港保险（预期）', '内地分红险', '内地增额寿'],
+                    datasets: [{
+                        label: '预期年化收益率（%）',
+                        data: [1.8, 6.5, 3.5, 3.0],
+                        backgroundColor: [
+                            'rgba(54, 207, 201, 0.7)',
+                            'rgba(22, 93, 255, 0.7)',
+                            'rgba(255, 125, 0, 0.7)',
+                            'rgba(114, 46, 209, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 207, 201, 1)',
+                            'rgba(22, 93, 255, 1)',
+                            'rgba(255, 125, 0, 1)',
+                            'rgba(114, 46, 209, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '收益率（%）'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 图表4：香港保险资金典型资产配置比例
+            const assetCtx = document.getElementById('assetAllocationChart').getContext('2d');
+            new Chart(assetCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['全球股票', '债券', '房地产投资', '现金及等价物', '另类投资'],
+                    datasets: [{
+                        data: [35, 30, 15, 10, 10],
+                        backgroundColor: [
+                            '#165DFF',
+                            '#36CFC9',
+                            '#FF7D00',
+                            '#722ED1',
+                            '#F5222D'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.raw}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 图表5：分红实现率对比
+            const dividendCtx = document.getElementById('dividendRateChart').getContext('2d');
+            new Chart(dividendCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['香港保诚', '香港友邦', '香港安盛', '内地平安', '内地太平洋'],
+                    datasets: [{
+                        label: '分红实现率（%）',
+                        data: [102, 98, 100, 40, 53],
+                        backgroundColor: [
+                            'rgba(22, 93, 255, 0.7)',
+                            'rgba(22, 93, 255, 0.7)',
+                            'rgba(22, 93, 255, 0.7)',
+                            'rgba(245, 34, 45, 0.7)',
+                            'rgba(245, 34, 45, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(22, 93, 255, 1)',
+                            'rgba(22, 93, 255, 1)',
+                            'rgba(22, 93, 255, 1)',
+                            'rgba(245, 34, 45, 1)',
+                            'rgba(245, 34, 45, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 120,
+                            title: {
+                                display: true,
+                                text: '实现率（%）'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 滚动动画
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.fade-in');
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect();
+                    // 元素进入视口
+                    if(position.top < window.innerHeight && position.bottom >= 0) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // 初始设置
+            document.querySelectorAll('.fade-in').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            });
+
+            // 页面加载和滚动时触发动画
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+
+            // 初始触发一次动画
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
