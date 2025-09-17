@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港多元货币分红险与内地保险产品深度对比</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#93c5fd',
+                        neutral: '#f3f4f6',
+                        dark: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-dark">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+            <a href="#" class="text-primary text-2xl font-bold flex items-center">
+                <i class="fa fa-line-chart mr-2"></i>
+                <span>保险产品对比平台</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#intro" class="text-gray-700 hover:text-primary transition-colors font-medium">市场概况</a>
+                <a href="#收益结构" class="text-gray-700 hover:text-primary transition-colors font-medium">收益结构</a>
+                <a href="#产品功能" class="text-gray-700 hover:text-primary transition-colors font-medium">产品功能</a>
+                <a href="#投资配置" class="text-gray-700 hover:text-primary transition-colors font-medium">投资配置</a>
+                <a href="#适用人群" class="text-gray-700 hover:text-primary transition-colors font-medium">适用人群</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="menuBtn">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="md:hidden hidden bg-white w-full" id="mobileMenu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#intro" class="text-gray-700 hover:text-primary transition-colors py-2">市场概况</a>
+                <a href="#收益结构" class="text-gray-700 hover:text-primary transition-colors py-2">收益结构</a>
+                <a href="#产品功能" class="text-gray-700 hover:text-primary transition-colors py-2">产品功能</a>
+                <a href="#投资配置" class="text-gray-700 hover:text-primary transition-colors py-2">投资配置</a>
+                <a href="#适用人群" class="text-gray-700 hover:text-primary transition-colors py-2">适用人群</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow">香港多元货币分红险与内地保险产品深度对比</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">全面解析两地保险产品差异，助力您做出明智的资产配置决策</p>
+            <div class="mt-10">
+                <a href="#intro" class="bg-white text-primary px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg">
+                    开始了解 <i class="fa fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 一、市场概况 -->
+        <section id="intro" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="bg-primary text-white p-3 rounded-full mr-4">
+                    <i class="fa fa-globe text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark">市场概况：两地保险市场的差异化发展路径</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港与内地保险市场因历史发展进程、金融环境、监管政策等因素存在显著差异，这些差异直接体现在保险产品设计、收益结构、投资策略以及服务功能等多个方面。2025年，随着全球经济格局变化和投资者需求多元化，香港多元货币分红险在内地市场的关注度持续提升，成为资产配置的重要选择之一。
+                </p>
+                <div class="bg-neutral rounded-lg p-6 mb-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fa fa-bar-chart text-primary text-2xl mr-3"></i>
+                        <h3 class="text-xl font-semibold">关键市场数据</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        据香港保监局统计，2024年内地访客投保香港保险的新造业务保费达<span class="text-primary font-bold">628亿港元</span>，占香港保险业新造业务的<span class="text-primary font-bold">28.6%</span>，其中多元货币分红险占比超<span class="text-primary font-bold">60%</span>。这种市场热度背后，是产品特性与投资者需求的高度契合。
+                    </p>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    本研究将从收益结构、投资策略、产品功能、监管环境等维度，全面剖析香港多元货币分红险与内地保险产品的核心差异，为投资者提供客观、全面的决策参考。通过深入了解两地保险产品的特点，投资者能够更准确地评估不同产品的风险与收益，选择最适合自身需求的保险产品，实现财富的有效管理与传承。
+                </p>
+            </div>
+        </section>
+
+        <!-- 二、收益结构对比 -->
+        <section id="收益结构" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="bg-primary text-white p-3 rounded-full mr-4">
+                    <i class="fa fa-pie-chart text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark">收益结构对比：确定性与预期性的平衡艺术</h2>
+            </div>
+
+            <!-- 2.1 收益构成与分配机制差异 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">2.1 收益构成与分配机制差异</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港多元货币分红险与内地保险产品在收益构成上存在本质区别，这直接影响投资者最终获得的回报。香港分红险采用"低保底+高分红"的收益结构，保证收益部分较低，通常仅为0.5%-1%，但预期收益较高，可达6.5%左右。而内地保险产品则以"高保底+低分红"为主要特点，保证收益部分较高，通常在2.3%-2.4%之间，加上分红后整体IRR约为3.1%-3.5%。
+                </p>
+                <p class="mb-8 text-gray-700 leading-relaxed">
+                    这种结构差异直接体现在收益构成上：香港保险宣传的6.5%演示收益率中，保证部分仅占0.5%-1%，剩下的90%以上收益都来自非保证分红；而内地储蓄险虽然收益数字看似更低，但每一分都写进合同，属于"板上钉钉"的确定性收益。这意味着香港分红险更注重长期投资回报潜力，而内地保险产品则更强调前期收益的确定性。
+                </p>
+
+                <!-- 收益结构对比表 -->
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-700">
+                                <th class="py-3 px-4 border-b text-left">对比维度</th>
+                                <th class="py-3 px-4 border-b text-left">香港多元货币分红险</th>
+                                <th class="py-3 px-4 border-b text-left">内地保险产品（以分红型增额寿为例）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">收益构成</td>
+                                <td class="py-3 px-4 border-b">保证现金价值（0.5%-1%）+ 非保证分红（周年红利+终期红利）</td>
+                                <td class="py-3 px-4 border-b">保证现金价值（2.3%-2.4%）+ 非保证分红（多为现金红利）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">非保证收益占比</td>
+                                <td class="py-3 px-4 border-b">约90%（依赖保险公司全球投资收益）</td>
+                                <td class="py-3 px-4 border-b">约30%-40%（依赖内地市场投资收益）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">长期IRR（演示）</td>
+                                <td class="py-3 px-4 border-b">分红实现率100%时可达6.5%左右</td>
+                                <td class="py-3 px-4 border-b">乐观预期下约3.1%-3.5%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">红利计算方式</td>
+                                <td class="py-3 px-4 border-b">复利分红为主，部分结合终期红利（约60%产品采用多模式）</td>
+                                <td class="py-3 px-4 border-b">非复利分红为主（超80%产品采用单一模式）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">收益确定性</td>
+                                <td class="py-3 px-4 border-b">非保证部分占比高，受市场波动影响大</td>
+                                <td class="py-3 px-4 border-b">保证部分占比高，确定性强</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">回本期</td>
+                                <td class="py-3 px-4">通常5-10年（顶级产品可缩短至6年）</td>
+                                <td class="py-3 px-4">普遍8-10年</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 收益构成对比图表 -->
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">两地保险产品收益构成占比对比</h4>
+                    <div class="h-80">
+                        <canvas id="收益构成Chart"></canvas>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    从分配机制来看，香港分红险分红计算方式相对复杂，通常采用"复利分红"或"非复利分红"，部分产品会将红利分为周年红利、终期红利等不同部分。香港约60%的分红险产品采用多种红利计算方式相结合的模式。而内地分红险多采用"非复利分红"，分红计算相对简单，主要依据保险公司盈利状况，按照一定比例向投保人分配红利，一般不会细分红利类别。内地超过80%的分红险产品采用单一的非复利分红计算方式。
+                </p>
+            </div>
+
+            <!-- 2.2 收益实现与分红表现 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">2.2 收益实现与分红表现</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港多元货币分红险的收益实现与内地保险产品存在显著差异。香港保险市场透明度高，香港保监局强制要求保险公司每年公布"分红实现率"（即实际分红与演示分红的比例），近年主流产品该比率多维持在90%-110%，部分甚至达120%。2024年香港市场，友邦、安盛等9家主流保险公司的平均实现率超80%，核心公司更是稳定在90%-110%区间，友邦甚至达到99%的高度，几乎完全兑现承诺。
+                </p>
+                <p class="mb-8 text-gray-700 leading-relaxed">
+                    相比之下，内地保险公司虽然也公布分红实现率，但整体水平较低。2024年内地分红险的实现率陷入低谷：头部公司中国平安最高仅40%，太平洋人寿徘徊在40%-66%，市场整体更是仅有30%-50%的水平，意味着消费者实际拿到的收益可能不及预期一半。虽然从2020年开始，内地分红实现率持续下降，但各年度现金红利实现率均超过了100%。
+                </p>
+
+                <!-- 分红实现率对比表 -->
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-700">
+                                <th class="py-3 px-4 border-b text-left">机构类型/公司</th>
+                                <th class="py-3 px-4 border-b text-left">分红实现率区间（周年红利）</th>
+                                <th class="py-3 px-4 border-b text-left">分红实现率区间（终期红利/总现金价值）</th>
+                                <th class="py-3 px-4 border-b text-left">代表产品案例</th>
+                                <th class="py-3 px-4 border-b text-left">数据来源</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">香港主流保险公司</td>
+                                <td class="py-3 px-4 border-b">80%-110%</td>
+                                <td class="py-3 px-4 border-b">75%-120%</td>
+                                <td class="py-3 px-4 border-b">友邦环宇盈活、安盛挚汇</td>
+                                <td class="py-3 px-4 border-b">香港保监局2024年度报告</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">香港核心保险公司（友邦）</td>
+                                <td class="py-3 px-4 border-b">95%-99%</td>
+                                <td class="py-3 px-4 border-b">90%-105%</td>
+                                <td class="py-3 px-4 border-b">友邦环宇盈活</td>
+                                <td class="py-3 px-4 border-b">友邦保险2024年分红报告</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">内地头部保险公司（平安）</td>
+                                <td class="py-3 px-4 border-b">35%-40%</td>
+                                <td class="py-3 px-4 border-b">30%-38%</td>
+                                <td class="py-3 px-4 border-b">平安增额终身寿险</td>
+                                <td class="py-3 px-4 border-b">中国平安2024年财报</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">内地头部保险公司（太保）</td>
+                                <td class="py-3 px-4 border-b">40%-66%</td>
+                                <td class="py-3 px-4 border-b">35%-60%</td>
+                                <td class="py-3 px-4 border-b">太保鑫享事诚</td>
+                                <td class="py-3 px-4 border-b">太平洋人寿2024年公告</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-medium">内地市场整体水平</td>
+                                <td class="py-3 px-4 border-b">30%-50%</td>
+                                <td class="py-3 px-4 border-b">25%-45%</td>
+                                <td class="py-3 px-4 border-b">-</td>
+                                <td class="py-3 px-4 border-b">银保监会2024年行业数据</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 分红实现率对比图表 -->
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">2024年两地保险产品分红实现率对比</h4>
+                    <div class="h-80">
+                        <canvas id="分红实现率Chart"></canvas>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    值得注意的是，香港分红险的分红实现率也存在随保单年期增加而下降的趋势。以某香港保险公司2023年报告为例，不同货币和不同保单年期的分红实现率差异明显：美元保单10年以上的归原红利现金价值分红实现率仅为45%，而特别红利现金价值分红实现率为111%；港元保单10年以上的归原红利现金价值分红实现率为58%，特别红利现金价值分红实现率为66%。这表明香港分红险的长期收益实现存在一定不确定性，需要投资者谨慎评估。
+                </p>
+            </div>
+
+            <!-- 2.3 收益演示与实际回报对比 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">2.3 收益演示与实际回报对比</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    两地保险产品在收益演示方法上也存在差异。内地监管对非保证利益有严格的限制，分红险的演示利率使用零分红和不高于4.5%的投资收益假设进行（现在不少头部公司直接下调到4%），而且演示只能使用利差以及70%的"可分配盈余"比例，这样分红险演示的时候，整体IRR可能也就3.5%。
+                </p>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    而香港监管并未对利益演示作出明确规定，对于分红险，大多数产品采用6%-7%以上的投资收益进行红利演示，"可分配盈余"比例很多是80%或90%，整体IRR就能到6%以上。不过，2025年7月1日起，香港保监局规定港元分红保单演示利率上限6%，非港元（如美元）保单上限6.5%，这一标准既规范市场，也让收益预期更具参考性。
+                </p>
+
+                <!-- 长期收益对比图表 -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-800">30岁女性5万×5年缴的长期收益对比</h4>
+                    <div class="h-80">
+                        <canvas id="长期收益对比Chart"></canvas>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    从实际回报来看，以30岁女性、5万×5年缴为例，对比香港友邦"环宇盈活"和大陆中意"一生中意"：短期（前7年）大陆产品收益领先，适合5年内需用钱的场景；长期（8年+）香港产品实现反超，30年IRR达6.5%，总收益比大陆产品多90万。这种差异主要源于两地保险产品的设计理念和投资策略不同。
+                </p>
+            </div>
+        </section>
+
+        <!-- 三、产品功能对比 -->
+        <section id="产品功能" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="bg-primary text-white p-3 rounded-full mr-4">
+                    <i class="fa fa-cogs text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark">产品功能对比：多元化与本地化的博弈</h2>
+            </div>
+
+            <!-- 3.1 货币选择与转换功能 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">3.1 货币选择与转换功能</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港多元货币分红险最显著的优势之一是其多元货币选择与转换功能。香港保险支持美元、英镑等多币种转换，如安盛挚汇可选择9种货币，每年可转换一次。据统计，香港市场超过90%的分红险产品提供至少两种外币计价选择。这种多元货币功能为投资者提供了有效的汇率风险对冲工具，能够满足不同人生阶段的跨境资金需求。
+                </p>
+                <p class="mb-8 text-gray-700 leading-relaxed">
+                    相比之下，内地分红险产品则以人民币计价，主要服务于国内市场，更适合对人民币资产有需求、主要在国内进行经济活动的投资者。内地市场几乎100%的分红险产品以人民币计价，缺乏货币转换功能，无法满足跨境投资、留学、移民等场景下的货币需求。
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-neutral p-6 rounded-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fa fa-globe text-primary text-2xl mr-3"></i>
+                            <h4 class="text-lg font-semibold">香港多元货币分红险</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>支持美元、英镑、欧元等9种以上货币选择</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>每年可免费转换一次保单货币</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>可根据汇率变化灵活调整资产货币结构</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>满足跨境支付、留学、移民等多元需求</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-neutral p-6 rounded-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <i class="fa fa-money text-primary text-2xl mr-3"></i>
+                            <h4 class="text-lg font-semibold">内地保险产品</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>以人民币计价，适合国内经济活动</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>不支持外币选择与货币转换</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>无法对冲汇率风险</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>符合国内资金管理政策要求</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-primary">
+                    <h4 class="text-lg font-semibold mb-3 text-primary">案例分析：汇率波动下的货币转换价值</h4>
+                    <p class="text-gray-700">
+                        以某客户为例，2022年1月购买10万美元分红险，当时汇率6.35，2025年6月汇率升至7.17，仅汇率差就获利8.2万元人民币，叠加每年分红，收益显著优于同期人民币理财产品。这充分展示了多元货币功能在资产保值增值方面的优势。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3.2 保单灵活性与资金运用 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">3.2 保单灵活性与资金运用</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    在保单灵活性方面，香港多元货币分红险与内地保险产品也存在明显差异。香港保险产品通常具有更高的灵活性，支持多种资金运用方式，如部分提领、保单贷款等。部分提领支持保单生效一定时间后（通常第2年起）随时申请，比如每年提领5%作为子女教育金，60岁后提领10%作为养老金，剩余资金继续复利增值，无需退保。
+                </p>
+                <p class="mb-8 text-gray-700 leading-relaxed">
+                    内地保险产品在资金运用方面相对受限。虽然部分产品也提供减保功能，但减保规则较严格，主流是每年最多减保20%保额或20%总保费。这种限制在一定程度上影响了资金的灵活性，特别是在面临突发资金需求时，投资者可能无法及时获取所需资金。
+                </p>
+
+                <!-- 保单灵活性对比表 -->
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-700">
+                                <th class="py-3 px-4 border-b text-left">功能特性</th>
+                                <th class="py-3 px-4 border-b text-left">香港多元货币分红险</th>
+                                <th class="py-3 px-4 border-b text-left">内地保险产品</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">部分提领规则</td>
+                                <td class="py-3 px-4 border-b">保单生效后第2年起可灵活提领，无比例限制（最低余额要求）</td>
+                                <td class="py-3 px-4 border-b">每年最多减保20%保额或20%总保费</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">保单贷款比例</td>
+                                <td class="py-3 px-4 border-b">最高可贷保单价值的90%</td>
+                                <td class="py-3 px-4 border-b">通常可贷现金价值的80%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">保单贷款利率</td>
+                                <td class="py-3 px-4 border-b">3%-5%，部分产品更低</td>
+                                <td class="py-3 px-4 border-b">4.5%-6%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">回本期</td>
+                                <td class="py-3 px-4 border-b">通常5-10年（顶级产品可缩短至6年）</td>
+                                <td class="py-3 px-4 border-b">普遍8-10年</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">红利锁定/解锁</td>
+                                <td class="py-3 px-4 border-b">支持，可灵活转换保证与非保证部分</td>
+                                <td class="py-3 px-4 border-b">多数产品不支持</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    此外，香港保险还支持红利锁定与解锁功能，让投资者能够根据市场情况灵活调控收益。红利锁定功能支持将已产生的复归红利部分/全部转为保证价值，规避市场波动；部分产品还支持红利解锁，可按比例转换回分红形态或提取现金。这种灵活的收益管理方式，使投资者能够在保证收益稳定性的同时，把握市场机会。
+                </p>
+            </div>
+
+            <!-- 3.3 财富传承功能对比 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">3.3 财富传承功能对比</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    在财富传承方面，香港多元货币分红险的功能设计全面领先于内地保险产品。香港保险支持无限次变更被保人、保单分拆、红利锁定解锁等功能，传承功能全面。相比之下，内地保险产品的被保险人通常不可以变更，功能相对较少，在财富传承方面的灵活性和全面性远不及香港保险产品。
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i class="fa fa-refresh text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold ml-3">无限次更换被保人</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            实现财富跨代传承，让复利效应延续百年。允许投保人在原受保人在世时，根据家庭结构变化更换受保人，确保保单权益随家庭传承需求调整。
+                        </p>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i class="fa fa-scissors text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold ml-3">保单分拆功能</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            将一份保单拆分为多张，满足多子女需求。从第3个保单年度起可拆分为多份独立保单，保留原权益且可单独指定受益人，避免退保损失。
+                        </p>
+                    </div>
+                    <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <i class="fa fa-user-plus text-primary"></i>
+                            </div>
+                            <h4 class="text-lg font-semibold ml-3">后备受保人指定</h4>
+                        </div>
+                        <p class="text-gray-700">
+                            原受保人身故后，保单自动由后备受保人继承，无需遗产认证、红利不中断。确保了财富传承的连续性，避免了遗产继承过程中的复杂程序。
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    此外，香港保险还支持多种身故支付选项，除了常见的一次性领取或分期领取，还支持类信托形式管理资产，从根源上避免受益人因不善理财导致的挥霍风险。这种人性化设计能够确保保险金按照投保人的意愿合理分配和使用，为受益人提供长期稳定的保障。
+                </p>
+            </div>
+        </section>
+
+        <!-- 四、投资配置对比 -->
+        <section id="投资配置" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="bg-primary text-white p-3 rounded-full mr-4">
+                    <i class="fa fa-bank text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark">投资配置对比：全球化与本地化的投资策略差异</h2>
+            </div>
+
+            <!-- 4.1 投资范围对比 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">4.1 投资范围对比</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港保险资金依托国际金融中心优势，可实现全球化资产配置，投资范围覆盖全球主要经济体的核心资产。而内地保险资金受监管政策限制，主要聚焦境内资产，投资范围相对狭窄。这种投资范围的差异是导致两地保险产品收益表现不同的重要原因之一。
+                </p>
+
+                <!-- 投资范围对比表 -->
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-700">
+                                <th class="py-3 px-4 border-b text-left">投资品类</th>
+                                <th class="py-3 px-4 border-b text-left">香港多元货币分红险</th>
+                                <th class="py-3 px-4 border-b text-left">内地保险产品</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">权益类覆盖市场</td>
+                                <td class="py-3 px-4 border-b">全球主要股市（美、欧、亚、新兴市场）</td>
+                                <td class="py-3 px-4 border-b">以A股为主，少量港股</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">固定收益类资产来源</td>
+                                <td class="py-3 px-4 border-b">全球高评级债券、新兴市场债、高收益债</td>
+                                <td class="py-3 px-4 border-b">境内国债、金融债、企业债、银行存款</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">另类资产占比</td>
+                                <td class="py-3 px-4 border-b">15%-30%（含全球地产、私募股权）</td>
+                                <td class="py-3 px-4 border-b">5%-15%（以境内基建、公募REITs为主）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">跨境投资比例</td>
+                                <td class="py-3 px-4 border-b">通常超70%（非港元/人民币资产）</td>
+                                <td class="py-3 px-4 border-b">通常低于10%（受QDII额度限制）</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 border-b font-medium">投资工具灵活性</td>
+                                <td class="py-3 px-4 border-b">可使用衍生品（如期权、期货）对冲风险</td>
+                                <td class="py-3 px-4 border-b">衍生品使用受限，以套期保值为主</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">香港保险资金全球投资分布</h4>
+                        <div class="h-72">
+                            <canvas id="香港投资分布Chart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">内地保险资金投资分布</h4>
+                        <div class="h-72">
+                            <canvas id="内地投资分布Chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4.2 核心资产配置比例对比 -->
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <h3 class="text-xl md:text-2xl font-semibold mb-6 text-primary">4.2 核心资产配置比例对比</h3>
+                <p class="mb-6 text-gray-700 leading-relaxed">
+                    香港保险公司为追求长期收益，通常采用"高权益、多另类"的资产配置策略，而非保证收益部分的资金（占保费的70%-80%）会重点投向高收益资产。内地保险资金受"稳健优先"监管导向影响，资产配置以"高固收、低权益"为核心。
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">香港多元货币分红险资产配置</h4>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">权益类资产：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-primary h-4 rounded-full" style="width: 50%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">40%-60%（部分激进型产品可达65%）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">固定收益类：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-secondary h-4 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">20%-35%（以高评级债券为"底仓"）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">另类资产：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-accent h-4 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">15%-30%（商业地产、私募股权等）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">现金及等价物：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-gray-400 h-4 rounded-full" style="width: 7%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">5%-10%（应对流动性需求）</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">内地保险产品资产配置</h4>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">固定收益类：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-primary h-4 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">60%-75%（核心为债券和银行存款）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">权益类资产：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-secondary h-4 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">10%-25%（以A股为主）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">另类资产：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-accent h-4 rounded-full" style="width: 10%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">5%-15%（境内基建、公募REITs等）</div>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2/5 font-medium">现金及等价物：</div>
+                                <div class="w-3/5">
+                                    <div class="bg-gray-200 rounded-full h-4">
+                                        <div class="bg-gray-400 h-4 rounded-full" style="width: 5%"></div>
+                                    </div>
+                                    <div class="text-sm mt-1">3%-8%（应对流动性需求）</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    这种资产配置策略的差异直接影响了产品的收益特征：香港保险产品通过全球化、多元化配置追求更高的长期收益，但短期波动可能较大；内地保险产品则更注重资产安全性和收益稳定性，通过高比例配置固定收益类资产降低波动，但长期收益潜力相对有限。投资者应根据自身的风险承受能力、投资期限和收益预期选择适合的产品。
+                </p>
+            </div>
+        </section>
+
+        <!-- 五、适用人群对比 -->
+        <section id="适用人群" class="mb-16">
+            <div class="flex items-center mb-8">
+                <div class="bg-primary text-white p-3 rounded-full mr-4">
+                    <i class="fa fa-users text-xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-dark">适用人群对比：匹配不同需求的选择指南</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+                <p class="mb-8 text-gray-700 leading-relaxed">
+                    香港多元货币分红险与内地保险产品各有其适用场景和人群。选择哪种产品不应简单基于收益高低，而应结合个人的财务状况、风险承受能力、投资期限、跨境需求等多方面因素综合考虑。
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-primary">适合选择香港多元货币分红险的人群</h3>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">有跨境需求的高净值人群</h4>
+                                    <p class="text-gray-700 mt-1">包括有海外留学、移民计划的家庭，需要进行全球化资产配置的投资者。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">长期投资者（10年以上）</h4>
+                                    <p class="text-gray-700 mt-1">能够承受短期波动，追求长期复利增长，为退休、财富传承做准备的人群。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">具有一定风险承受能力的投资者</h4>
+                                    <p class="text-gray-700 mt-1">能够接受非保证收益的不确定性，理解全球市场波动对保单分红的影响。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">关注财富传承的家庭</h4>
+                                    <p class="text-gray-700 mt-1">需要灵活的遗产规划工具，希望实现跨代财富传承的高净值家庭。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">有外币资产配置需求的投资者</h4>
+                                    <p class="text-gray-700 mt-1">希望通过多元货币分散汇率风险，优化资产结构的投资者。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-primary">适合选择内地保险产品的人群</h3>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">风险偏好保守的投资者</h4>
+                                    <p class="text-gray-700 mt-1">重视本金安全和收益确定性，无法承受本金波动的投资者。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">中短期资金规划（5-10年）</h4>
+                                    <p class="text-gray-700 mt-1">有明确的中短期资金使用计划，如子女教育、购房等特定目标的人群。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">主要资产在境内的投资者</h4>
+                                    <p class="text-gray-700 mt-1">生活和事业重心在国内，没有跨境资金需求，偏好人民币资产的人群。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">追求简单明了的产品结构</h4>
+                                    <p class="text-gray-700 mt-1">希望保险产品结构简单、条款清晰、易于理解和管理的投资者。</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex-shrink-0 bg-primary/10 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fa fa-check text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">保费预算相对有限的投资者</h4>
+                                    <p class="text-gray-700 mt-1">内地产品通常起投金额较低，更适合保费预算有限的投资者。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-neutral p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">综合建议：多元化配置的平衡之道</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        对于资产规模较大、风险承受能力较强的投资者，建议采取多元化配置策略：将一部分资金配置于内地保险产品，确保核心资产的安全性和确定性；同时将另一部分资金配置于香港多元货币分红险，追求长期更高收益并分散风险。这种组合既能享受内地保险的稳定性，又能把握香港保险的全球化投资优势，实现风险与收益的平衡。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-4 flex items-center justify-center">
+                    <i class="fa fa-line-chart mr-2"></i>
+                    <span>保险产品对比平台</span>
+                </div>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-6">
+                    本报告仅供参考，不构成任何投资建议。保险产品选择应根据个人实际情况，在专业顾问指导下进行。</p>
+              
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm">© 2025 保险产品对比平台 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动菜单（如果打开）
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // 收益构成对比图表
+        const 收益构成Ctx = document.getElementById('收益构成Chart').getContext('2d');
+        new Chart(收益构成Ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['保证收益', '非保证分红'],
+                datasets: [
+                    {
+                        label: '香港多元货币分红险',
+                        data: [10, 90],
+                        backgroundColor: ['#3b82f6', '#1e40af'],
+                        borderWidth: 0
+                    },
+                    {
+                        label: '内地保险产品',
+                        data: [65, 35],
+                        backgroundColor: ['#93c5fd', '#60a5fa'],
+                        borderWidth: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // 分红实现率对比图表
+        const 分红实现率Ctx = document.getElementById('分红实现率Chart').getContext('2d');
+        new Chart(分红实现率Ctx, {
+            type: 'bar',
+            data: {
+                labels: ['香港主流公司', '友邦保险', '中国平安', '太平洋人寿', '内地市场整体'],
+                datasets: [
+                    {
+                        label: '周年红利实现率（%）',
+                        data: [95, 97, 38, 53, 40],
+                        backgroundColor: '#3b82f6',
+                    },
+                    {
+                        label: '终期红利/总现金价值实现率（%）',
+                        data: [98, 97, 34, 47, 35],
+                        backgroundColor: '#1e40af',
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 120,
+                        title: {
+                            display: true,
+                            text: '实现率（%）'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 长期收益对比图表
+        const 长期收益对比Ctx = document.getElementById('长期收益对比Chart').getContext('2d');
+        new Chart(长期收益对比Ctx, {
+            type: 'line',
+            data: {
+                labels: ['5年', '10年', '15年', '20年', '25年', '30年'],
+                datasets: [
+                    {
+                        label: '香港友邦"环宇盈活"（万元）',
+                        data: [24, 33, 45, 62, 85, 116],
+                        borderColor: '#1e40af',
+                        backgroundColor: 'rgba(30, 64, 175, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: '内地中意"一生中意"（万元）',
+                        data: [25, 30, 35, 41, 48, 56],
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '总收益（万元）'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: '持有年限'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 香港投资分布图表
+        const 香港投资分布Ctx = document.getElementById('香港投资分布Chart').getContext('2d');
+        new Chart(香港投资分布Ctx, {
+            type: 'pie',
+            data: {
+                labels: ['美股市场', '欧洲市场', '亚洲市场（不含中国）', '中国市场', '债券', '另类资产', '现金'],
+                datasets: [{
+                    data: [25, 15, 10, 10, 25, 10, 5],
+                    backgroundColor: [
+                        '#1e40af',
+                        '#3b82f6',
+                        '#60a5fa',
+                        '#93c5fd',
+                        '#bfdbfe',
+                        '#dbeafe',
+                        '#eff6ff'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                    }
+                }
+            }
+        });
+
+        // 内地投资分布图表
+        const 内地投资分布Ctx = document.getElementById('内地投资分布Chart').getContext('2d');
+        new Chart(内地投资分布Ctx, {
+            type: 'pie',
+            data: {
+                labels: ['国债及金融债', '企业债', '银行存款', 'A股市场', '港股通', '另类资产', '现金'],
+                datasets: [{
+                    data: [30, 25, 15, 15, 5, 8, 2],
+                    backgroundColor: [
+                        '#1e40af',
+                        '#3b82f6',
+                        '#60a5fa',
+                        '#93c5fd',
+                        '#bfdbfe',
+                        '#dbeafe',
+                        '#eff6ff'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                    }
+                }
+            }
+        });
+
+        // 滚动时导航栏效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('bg-white/95');
+                nav.classList.add('bg-white');
+            }
+        });
+    </script>
+</body>
+</html>
